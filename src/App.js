@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
-import PortforlioContainer from "./components/PortfolioContainer";
-const App = () => <PortforlioContainer />;
+import Header from "./components/Header";
+const App = () => <Header />;
 export default App;
