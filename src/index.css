@@ -90,12 +90,7 @@
       flex: 1 1 0;
       width: 20%;    
   }
-  
-  h2 {    
-      text-align: center;
-      color: var(--basecolor);
-  }
-  
+    
   footer {     
       margin: 0 auto;
   }
