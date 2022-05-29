@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Endless Trivia",
+        "thumbnail": "assets/images/endless-trivia.png",
+        "about": "Endless Trivia is an application made for trivia enthusiasts who are looking for a challenge, students looking to study a specific topic and people who like to pass time with quizzes.",
+        "githubrepo": "https://github.com/pmayur0680/Endless-Trivia",
+        "deployedurl": "https://triviabymmaac.herokuapp.com/",
+        "isherokudeployed": true
+    },
+    {
+        "id": 2,
+        "title": "Stock Simulator",
+        "thumbnail": "assets/images/stock-simulator.png",
+        "about": "With use of real-time APIs, Stock Simulator allows an investor to practice buying and selling stocks without risking real money.",
+        "githubrepo": "https://github.com/pmayur0680/Stock-Market-Simulator",
+        "deployedurl": "https://pmayur0680.github.io/Stock-Market-Simulator/",
+        "isherokudeployed": false
+    },
+    {
+        "id": 3,
+        "title": "The Tech Blog",
+        "thumbnail": "assets/images/the-tech-blog.png",
+        "about": "CMS-style blog using Handlebars.js and Sequelize that allow users to publish their blog posts and comment on other user post.",
+        "githubrepo": "https://github.com/pmayur0680/The-Tech-Blog",
+        "deployedurl": "https://serene-ridge-42390.herokuapp.com/",
+        "isherokudeployed": true
+    }
+]

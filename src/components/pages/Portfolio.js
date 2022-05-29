@@ -1,9 +1,27 @@
 import React from 'react';
 
-export default function Portfolio() {
+function ProjectCard(props) {
   const cardStyle = {
     width: "20rem"
   }
+  return (    
+        <div className="card mb-4" style={cardStyle}>
+          <img className="card-img-top" src="assets/images/endless-trivia.png" alt="Endless Trivia"></img>
+          <div className="card-body">
+            <h3 className="card-title">Endless Trivia</h3>
+            <p className="card-text">Endless Trivia is an application made for trivia enthusiasts who are looking for a challenge, students looking to study a specific topic and people who like to pass time with quizzes.</p>
+            <a href="https://github.com/pmayur0680/Endless-Trivia" className="card-link">
+                <img src="../assets/images/github-icon.png" alt="GitHub Repo"></img>
+            </a>
+            <a href="https://triviabymmaac.herokuapp.com/" className="card-link">
+                <img src="../assets/images/heroku.png" alt="Heroku Deployed"></img>
+            </a>
+          </div>
+        </div> 
+    );
+}
+export default function Portfolio() {
+  
   return (
     <div className='container-fluid'>
       <h2>Portfolio</h2>
