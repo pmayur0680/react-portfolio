@@ -1,5 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Projects from '../../myprojects.json';
+import RecentProjects from './RecentProjects';
+import CurrentProjects from './CurrentProjects';
+import PastProjects from './PastProjects';
 
 function ProjectCard(props) {
   const cardStyle = {
@@ -22,9 +25,64 @@ function ProjectCard(props) {
     );
 }
 export default function Portfolio() {  
+  const [currentMenu, setCurrentMenu] = useState('Recent');
+  const [pageBackground, setpageBackground] = useState('bgrecent container-fluid');
+  const handleMenuChange = (menu) => {
+    if(menu === 'Recent')
+    setpageBackground('bgrecent container-fluid')
+    else if(menu === 'Current')
+    setpageBackground('bgcurrent container-fluid')
+    else if(menu === 'Past')
+    setpageBackground('bgpast container-fluid')
+    setCurrentMenu(menu)
+  };
+  
+  const renderPortfolio = () => {
+    if (currentMenu === 'Recent') {
+      return <RecentProjects />;
+    }
+    else if (currentMenu === 'Current') {
+      return <CurrentProjects />;
+    }
+    else if (currentMenu === 'Past') {
+      return <PastProjects />;
+    }    
+  };
   return (
-    <div className='container-fluid'>
-      <h2>Portfolio</h2>
+    <div className= {pageBackground}>
+      <h2 className='textbase'>Portfolio</h2>
+      <div className='row'>
+        <div className='col-3'>
+          <h3 
+            onMouseOver={ () => handleMenuChange('Recent') }
+            className=
+              {currentMenu === 'Recent'? 'menu-active p-3': 'p-3 textbase'}
+            role="button"  
+          >
+            Recent
+          </h3>
+          <h3 
+            onMouseOver={ () => handleMenuChange('Current') }
+            className=
+              {currentMenu === 'Current'? 'menu-active p-3': 'p-3 textbase'}
+            role="button"  
+          >
+            2013 - 2022
+          </h3>
+          <h3 
+            onMouseOver={ () => handleMenuChange('Past') }
+            className=
+              {currentMenu === 'Past'? 'menu-active p-3': 'p-3 textbase'}
+            role="button"  
+          >
+            2007 - 2012
+          </h3>          
+        </div>
+        <div className='col-9'>
+          {renderPortfolio()}
+        </div>
+      </div>
+      
       <div className="cards text-center">  
         { Projects.map((project) => (
           <ProjectCard 

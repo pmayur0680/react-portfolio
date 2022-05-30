@@ -117,7 +117,43 @@
       transform: translate(-50%, -50%);
       color: #fff;
   }
+
+  .textbase {
+    color: var(--basecolor);
+  }
   
+  .textaccent {
+    color: var(--accentcolor);
+   }
+
+  .backgroundbase {
+    background: var(--basecolor);
+  }
+  
+  .bgrecent {
+    background: var(--accentcolor);
+  }
+  
+  .bgcurrent {
+      background: #D1F0ED;
+  }
+
+  .bgpast {
+    background: #F9E2C3;
+  }
+
+  .menu-active {
+    background: var(--basecolor);
+    color: var(--accentcolor);
+    font-weight: bolder;    
+    animation: 3s linear .1s colorIt;
+    left: -300px;
+	-webkit-transform: translateX(3%);
+    transform: translateX(3%);
+	transition: transform 300ms linear;
+	will-change: transform;    
+  }
+
   section .content {    
       width: 80%;
       padding: 10px;
