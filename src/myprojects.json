@@ -2,6 +2,7 @@
     {
         "id": 1,
         "title": "Endless Trivia",
+        "type": "Recent",
         "thumbnail": "assets/images/endless-trivia.png",
         "about": "Endless Trivia is an application made for trivia enthusiasts who are looking for a challenge, students looking to study a specific topic and people who like to pass time with quizzes.",
         "githubrepo": "https://github.com/pmayur0680/Endless-Trivia",
@@ -11,6 +12,7 @@
     {
         "id": 2,
         "title": "Stock Simulator",
+        "type": "Recent",
         "thumbnail": "assets/images/stock-simulator.png",
         "about": "With use of real-time APIs, Stock Simulator allows an investor to practice buying and selling stocks without risking real money.",
         "githubrepo": "https://github.com/pmayur0680/Stock-Market-Simulator",
@@ -20,10 +22,29 @@
     {
         "id": 3,
         "title": "The Tech Blog",
+        "type": "Recent",
         "thumbnail": "assets/images/the-tech-blog.png",
         "about": "CMS-style blog using Handlebars.js and Sequelize that allow users to publish their blog posts and comment on other user post.",
         "githubrepo": "https://github.com/pmayur0680/The-Tech-Blog",
         "deployedurl": "https://serene-ridge-42390.herokuapp.com/",
         "isherokudeployed": true
+    },
+    {
+        "id": 4,
+        "title": "University Management",
+        "type": "Past",
+        "thumbnail": "assets/images/aiuedu.png",
+        "about": "University Management Software for American International University West Africa using PHP/PostgreSQL.",
+        "deployedurl": "https://aiu.edu.gm/",
+        "isherokudeployed": false
+    },
+    {
+        "id": 5,
+        "title": "Electronic Medical Records (EMR)",
+        "type": "Past",
+        "thumbnail": "assets/images/pwrmd.png",
+        "about": "PowerMD+ is a web based software integrating Practice Management, Patient Management, and Patient Portal for small & medium sized medical practices.",
+        "deployedurl": "https://www.pwrmd.com/",
+        "isherokudeployed": false
     }
 ]
