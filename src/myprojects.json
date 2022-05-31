@@ -46,5 +46,50 @@
         "about": "PowerMD+ is a web based software integrating Practice Management, Patient Management, and Patient Portal for small & medium sized medical practices.",
         "deployedurl": "https://www.pwrmd.com/",
         "isherokudeployed": false
+    },
+    {
+        "id": 6,
+        "title": "ISP Providers in My Area",
+        "type": "Current",
+        "thumbnail": "assets/images/ispprovidersinmyarea.png",
+        "about": "Ispprovidersinmyarea is a high speed internet service provider search and comparison website to find all of the internet service providers in your area.",
+        "deployedurl": "https://www.ispprovidersinmyarea.com/",
+        "isherokudeployed": false
+    },
+    {
+        "id": 7,
+        "title": "Top 10 in USA",
+        "type": "Current",
+        "thumbnail": "assets/images/top10inusa.png",
+        "about": "Top10inusa.com is a travel guide to find best places to visit in the United States.",
+        "deployedurl": "https://www.top10inusa.com/",
+        "isherokudeployed": false
+    },
+    {
+        "id": 8,
+        "title": "Nrisworld",
+        "type": "Current",
+        "thumbnail": "assets/images/nrisworld.png",
+        "about": "One stop destination to find anything Indian in USA and the World.",
+        "deployedurl": "http://www.nrisworld.com/",
+        "isherokudeployed": false
+    },
+    {
+        "id": 9,
+        "title": "Best Energy Providers",
+        "type": "Current",
+        "thumbnail": "assets/images/bestenergyproviders.png",
+        "about": "Bestenergyproviders is a energy provider search and comparison website to find all of the electricity service providers in your area.",
+        "deployedurl": "https://www.bestenergyproviders.com/",
+        "isherokudeployed": false
+    },
+    {
+        "id": 10,
+        "title": "Lawyers Near Me",
+        "type": "Current",
+        "thumbnail": "assets/images/lawyersnearbyme.png",
+        "about": "Need a Lawyer? Find a lawyer with Lawyersnearbyme directory to search for attorneys and law firms near you.",
+        "deployedurl": "http://www.lawyersnearbyme.com/",
+        "isherokudeployed": false
     }
 ]
