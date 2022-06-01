@@ -67,7 +67,7 @@
       color: var(--accentcolor);
       text-decoration-color: var(--accentcolor);
       text-underline-offset: 0.4em;
-      font-weight: bold;
+      font-weight: bold;      
   }
   
   main {
