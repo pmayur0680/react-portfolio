@@ -6,27 +6,27 @@ function ProjectCard(props) {
     width: "20rem"
   }
   return (    
-        <div className="card mb-4" style={cardStyle}>          
-          <img className="card-img-top" src={props.thumbnail} alt={props.title}></img>
-          <div className="card-body">
-            <h3 className="card-title">{props.title}</h3>
-            <p className="card-text">{props.about}</p>
-            { props.githubrepo &&
-            <a href={props.githubrepo} className="card-link">
-                <img src="../assets/images/github-icon.png" alt="GitHub Repo"></img>
-            </a>
-            }        
-            { props.deployedurl &&  
-            <a href={props.deployedurl} className="card-link">         
-            { props.isherokudeployed ? (   
-                <img src="../assets/images/heroku.png" alt="Heroku Deployed"></img>
-            ) : (   
-              <span>View Live</span>
-            )}
-            </a>
-            }
-          </div>
-        </div> 
+    <div className="card mb-4" style={cardStyle}>          
+    <img className="card-img-top" src={props.thumbnail} alt={props.title}></img>
+    <div className="card-body">
+      <h3 className="card-title">{props.title}</h3>
+      <p className="card-text">{props.about}</p>
+      { props.githubrepo &&
+      <a href={props.githubrepo} className="card-link">
+          <img src="../assets/images/github-icon.png" alt="GitHub Repo"></img>
+      </a>
+      }        
+      { props.deployedurl &&  
+      <a href={props.deployedurl} className="card-link">         
+      { props.isherokudeployed ? (   
+          <img src="../assets/images/heroku.png" alt="Heroku Deployed"></img>
+      ) : (   
+        <span>View Live</span>
+      )}
+      </a>
+      }
+    </div>
+  </div> 
     );
 }
 export default function Portfolio() {  

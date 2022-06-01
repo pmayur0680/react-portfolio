@@ -9,7 +9,21 @@ export default function Contact() {
   const [message, setMessage] = useState('');
   // Create state variable to display validation error message
   const [errorMessage, setErrorMessage] = useState('');
-  
+  const validateIsName = () => {
+    if(!name) {
+      setErrorMessage('name is required!');
+    }
+  }
+  const validateIsEmail = () => {
+    if (!validateEmail(email)) {
+      setErrorMessage('Your email is Invalid!');
+    }
+  }
+  const validateIsMessage = () => {
+    if(!message) {
+      setErrorMessage('message is required!');
+    }
+  }
   const handleFormSubmit = (e) => {    
     e.preventDefault();
     
@@ -42,7 +56,8 @@ export default function Contact() {
           <input 
             type="text" 
             value={name}
-            onChange={(e) => setName(e.target.value)}
+            onChange={(e) => setName(e.target.value)}            
+            onMouseOut={(e) => validateIsName()}
             className="form-control mt-2" 
             id="name" 
           />
@@ -53,6 +68,7 @@ export default function Contact() {
             type="email" 
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            onMouseOut={(e) => validateIsEmail()}
             className="form-control mt-2" 
             id="email" 
           />
@@ -62,6 +78,7 @@ export default function Contact() {
           <textarea 
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            onMouseOut={(e) => validateIsMessage()}
             class="form-control mt-2" 
             id="message" 
             rows="7"            
