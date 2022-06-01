@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.81a95e21.css",
+    "main.js": "/react-portfolio/static/js/main.480708ba.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/mayur-patel.JPG": "/react-portfolio/static/media/mayur-patel.c48cb4c22c46db519fcf.JPG",
+    "index.html": "/react-portfolio/index.html",
+    "main.81a95e21.css.map": "/react-portfolio/static/css/main.81a95e21.css.map",
+    "main.480708ba.js.map": "/react-portfolio/static/js/main.480708ba.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81a95e21.css",
+    "static/js/main.480708ba.js"
+  ]
+}
