@@ -2,94 +2,43 @@
     {
         "id": 1,
         "title": "Endless Trivia",
-        "type": "Recent",
         "thumbnail": "assets/images/endless-trivia.png",
-        "about": "Endless Trivia is an application made for trivia enthusiasts who are looking for a challenge, students looking to study a specific topic and people who like to pass time with quizzes.",
         "githubrepo": "https://github.com/pmayur0680/Endless-Trivia",
-        "deployedurl": "https://triviabymmaac.herokuapp.com/",
-        "isherokudeployed": true
+        "deployedurl": "https://triviabymmaac.herokuapp.com/"
     },
     {
         "id": 2,
         "title": "Stock Simulator",
-        "type": "Recent",
         "thumbnail": "assets/images/stock-simulator.png",
-        "about": "With use of real-time APIs, Stock Simulator allows an investor to practice buying and selling stocks without risking real money.",
         "githubrepo": "https://github.com/pmayur0680/Stock-Market-Simulator",
-        "deployedurl": "https://pmayur0680.github.io/Stock-Market-Simulator/",
-        "isherokudeployed": false
+        "deployedurl": "https://pmayur0680.github.io/Stock-Market-Simulator/"
     },
     {
         "id": 3,
-        "title": "The Tech Blog",
-        "type": "Recent",
-        "thumbnail": "assets/images/the-tech-blog.png",
-        "about": "CMS-style blog using Handlebars.js and Sequelize that allow users to publish their blog posts and comment on other user post.",
-        "githubrepo": "https://github.com/pmayur0680/The-Tech-Blog",
-        "deployedurl": "https://serene-ridge-42390.herokuapp.com/",
-        "isherokudeployed": true
+        "title": "PWA Text Editor",
+        "thumbnail": "assets/images/text-editor.png",
+        "githubrepo": "https://github.com/pmayur0680/pwa-text-editor",
+        "deployedurl": "https://jate-text-editor22.herokuapp.com/"
     },
     {
         "id": 4,
-        "title": "University Management",
-        "type": "Past",
-        "thumbnail": "assets/images/aiuedu.png",
-        "about": "University Management Software for American International University West Africa using PHP/PostgreSQL.",
-        "deployedurl": "https://aiu.edu.gm/",
-        "isherokudeployed": false
+        "title": "PWA Contact App",
+        "thumbnail": "assets/images/contact-directory.png",
+        "githubrepo": "https://github.com/pmayur0680/contact-directory-app",
+        "deployedurl": "https://intense-fortress-87690.herokuapp.com/"
     },
     {
         "id": 5,
-        "title": "Electronic Medical Records (EMR)",
-        "type": "Past",
-        "thumbnail": "assets/images/pwrmd.png",
-        "about": "PowerMD+ is a web based software integrating Practice Management, Patient Management, and Patient Portal for small & medium sized medical practices.",
-        "deployedurl": "https://www.pwrmd.com/",
-        "isherokudeployed": false
-    },
+        "title": "The Tech Blog",        
+        "thumbnail": "assets/images/the-tech-blog.png",        
+        "githubrepo": "https://github.com/pmayur0680/The-Tech-Blog",
+        "deployedurl": "https://serene-ridge-42390.herokuapp.com/"
+    },   
     {
         "id": 6,
-        "title": "ISP Providers in My Area",
-        "type": "Current",
-        "thumbnail": "assets/images/ispprovidersinmyarea.png",
-        "about": "Ispprovidersinmyarea is a high speed internet service provider search and comparison website to find all of the internet service providers in your area.",
-        "deployedurl": "https://www.ispprovidersinmyarea.com/",
-        "isherokudeployed": false
-    },
-    {
-        "id": 7,
-        "title": "Top 10 in USA",
-        "type": "Current",
-        "thumbnail": "assets/images/top10inusa.png",
-        "about": "Top10inusa.com is a travel guide to find best places to visit in the United States.",
-        "deployedurl": "https://www.top10inusa.com/",
-        "isherokudeployed": false
-    },
-    {
-        "id": 8,
-        "title": "Nrisworld",
-        "type": "Current",
-        "thumbnail": "assets/images/nrisworld.png",
-        "about": "One stop destination to find anything Indian in USA and the World.",
-        "deployedurl": "http://www.nrisworld.com/",
-        "isherokudeployed": false
-    },
-    {
-        "id": 9,
-        "title": "Best Energy Providers",
-        "type": "Current",
-        "thumbnail": "assets/images/bestenergyproviders.png",
-        "about": "Bestenergyproviders is a energy provider search and comparison website to find all of the electricity service providers in your area.",
-        "deployedurl": "https://www.bestenergyproviders.com/",
-        "isherokudeployed": false
-    },
-    {
-        "id": 10,
-        "title": "Lawyers Near Me",
-        "type": "Current",
-        "thumbnail": "assets/images/lawyersnearbyme.png",
-        "about": "Need a Lawyer? Find a lawyer with Lawyersnearbyme directory to search for attorneys and law firms near you.",
-        "deployedurl": "http://www.lawyersnearbyme.com/",
-        "isherokudeployed": false
-    }
+        "title": "Note Taker",
+        "thumbnail": "assets/images/note-taker.png",
+        "githubrepo": "https://github.com/pmayur0680/note-taker",
+        "deployedurl": "https://note-taker-0422.herokuapp.com/notes"
+    }    
 ]
