@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import helper function to validate email address
-import { validateEmail } from '../../utils/helpers';
+import { validateEmail } from '../../../utils/helpers';
 
 export default function Contact() {
   // Create state variables for the fields in the form with initial values set to an empty string

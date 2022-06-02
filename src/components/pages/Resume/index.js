@@ -1,11 +1,11 @@
-import { type } from '@testing-library/user-event/dist/type';
 import React from 'react';
+import resume from './assets/Mayur-Patel-Resume.pdf';
 
 export default function Resume() {
   return (
     <div className= 'bgrecent container-fluid'>
       <h2 className='textbase'>Resume</h2>      
-      <a href="Mayur-Patel-Resume.pdf">Download my resume</a>
+      <a href={resume}>Download my resume</a>
       <h3>Front-end Proficiencies</h3>
       <ul style={{listStyleType: "circle"}}>
         <li>HTML</li>
