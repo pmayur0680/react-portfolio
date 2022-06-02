@@ -1,16 +1,23 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.81a95e21.css",
-    "main.js": "/react-portfolio/static/js/main.480708ba.js",
+    "main.js": "/react-portfolio/static/js/main.ca210519.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/mayur-patel.JPG": "/react-portfolio/static/media/mayur-patel.c48cb4c22c46db519fcf.JPG",
+    "static/media/endless-trivia.png": "/react-portfolio/static/media/endless-trivia.3903cf80a6aa9e5dc024.png",
+    "static/media/stock-simulator.png": "/react-portfolio/static/media/stock-simulator.f028339ccbf83d675ec9.png",
+    "static/media/Mayur-Patel-Resume.pdf": "/react-portfolio/static/media/Mayur-Patel-Resume.f12f3b40510d578402ba.pdf",
+    "static/media/contact-directory.png": "/react-portfolio/static/media/contact-directory.3413464c9b66c99556c4.png",
+    "static/media/the-tech-blog.png": "/react-portfolio/static/media/the-tech-blog.d4d61c60fb4e827373b6.png",
+    "static/media/text-editor.png": "/react-portfolio/static/media/text-editor.7d56fa21c040776f257b.png",
+    "static/media/note-taker.png": "/react-portfolio/static/media/note-taker.59821e68b649d34b8442.png",
     "index.html": "/react-portfolio/index.html",
     "main.81a95e21.css.map": "/react-portfolio/static/css/main.81a95e21.css.map",
-    "main.480708ba.js.map": "/react-portfolio/static/js/main.480708ba.js.map",
+    "main.ca210519.js.map": "/react-portfolio/static/js/main.ca210519.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81a95e21.css",
-    "static/js/main.480708ba.js"
+    "static/js/main.ca210519.js"
   ]
 }
