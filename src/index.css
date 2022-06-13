@@ -302,7 +302,9 @@
     color: #fff;
     font-weight: 800;
     font-size: 25px;
-    border-bottom: #000 solid 1px;
+    /* border-bottom: #000 solid 1px; */
+    border-bottom: #3e7184 solid 1px;
+    
   }
   
   .container_foto h4 {
