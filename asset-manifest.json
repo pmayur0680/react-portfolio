@@ -1,23 +1,30 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.81a95e21.css",
-    "main.js": "/react-portfolio/static/js/main.ca210519.js",
+    "main.css": "/react-portfolio/static/css/main.bb45299b.css",
+    "main.js": "/react-portfolio/static/js/main.caaec02a.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/mayur-patel.JPG": "/react-portfolio/static/media/mayur-patel.c48cb4c22c46db519fcf.JPG",
+    "static/media/nrisworld.png": "/react-portfolio/static/media/nrisworld.3fd16dc389e33c13450a.png",
+    "static/media/top10inusa.png": "/react-portfolio/static/media/top10inusa.076a87b508fa6d9e730a.png",
     "static/media/endless-trivia.png": "/react-portfolio/static/media/endless-trivia.3903cf80a6aa9e5dc024.png",
+    "static/media/aiuwa.png": "/react-portfolio/static/media/aiuwa.53de1876e53844605c63.png",
+    "static/media/pwrmd.png": "/react-portfolio/static/media/pwrmd.20609fcf6139e4e8f819.png",
     "static/media/stock-simulator.png": "/react-portfolio/static/media/stock-simulator.f028339ccbf83d675ec9.png",
-    "static/media/Mayur-Patel-Resume.pdf": "/react-portfolio/static/media/Mayur-Patel-Resume.f12f3b40510d578402ba.pdf",
-    "static/media/contact-directory.png": "/react-portfolio/static/media/contact-directory.3413464c9b66c99556c4.png",
-    "static/media/the-tech-blog.png": "/react-portfolio/static/media/the-tech-blog.d4d61c60fb4e827373b6.png",
-    "static/media/text-editor.png": "/react-portfolio/static/media/text-editor.7d56fa21c040776f257b.png",
-    "static/media/note-taker.png": "/react-portfolio/static/media/note-taker.59821e68b649d34b8442.png",
+    "static/media/tvprovidersguide.png": "/react-portfolio/static/media/tvprovidersguide.2283cea1cd5a366b375e.png",
+    "static/media/bestenergyproviders.png": "/react-portfolio/static/media/bestenergyproviders.13e2d04ede29ef8a5f46.png",
+    "static/media/freewifinearbyme.png": "/react-portfolio/static/media/freewifinearbyme.b89e5a2694da8a3b2cc8.png",
+    "static/media/ispprovidersinmyarea.png": "/react-portfolio/static/media/ispprovidersinmyarea.27117ea432af17e7e609.png",
+    "static/media/lawyersnearbyme.png": "/react-portfolio/static/media/lawyersnearbyme.412240f46f8b79511aa8.png",
+    "static/media/topnewsmartphones.png": "/react-portfolio/static/media/topnewsmartphones.4b8b022ee022ec915b07.png",
+    "static/media/Mayur-Patel-Resume.pdf": "/react-portfolio/static/media/Mayur-Patel-Resume.51fbeb45259a44b124b0.pdf",
+    "static/media/fitter.png": "/react-portfolio/static/media/fitter.ac93fc4a415a6ef9aa42.png",
     "index.html": "/react-portfolio/index.html",
-    "main.81a95e21.css.map": "/react-portfolio/static/css/main.81a95e21.css.map",
-    "main.ca210519.js.map": "/react-portfolio/static/js/main.ca210519.js.map",
+    "main.bb45299b.css.map": "/react-portfolio/static/css/main.bb45299b.css.map",
+    "main.caaec02a.js.map": "/react-portfolio/static/js/main.caaec02a.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81a95e21.css",
-    "static/js/main.ca210519.js"
+    "static/css/main.bb45299b.css",
+    "static/js/main.caaec02a.js"
   ]
 }
