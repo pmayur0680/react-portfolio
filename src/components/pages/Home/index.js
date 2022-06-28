@@ -13,6 +13,7 @@ export default function Home() {
         <h2 className='mb-0'>About me</h2>
         </div>
         <p className='mt-0'>Dedicated Full-stack web developer with 18 years of experience in front-end and back-end languages to create a more interactive user interface on the web. With a master's degree in computer applications and recent certification as a full-stack web developer, brings a deep knowledge of modern HTML, CSS, Bootstrap, JavaScript, Data Structure, NodeJS, React, REST API, GraphQL, PHP, and more. Demonstrated and utilized strong technical expertise, leadership, and skills to produce robust software and web applications for university students, healthcare personnel, and the community. Excited to leverage my skills as part of a fast-paced, quality-driven team to deliver better digital experiences.</p>
+  <h2>Skills</h2>       
   <div className="row">
     <div className="col-lg-3 ml-3">
       <h4>Front-end</h4>

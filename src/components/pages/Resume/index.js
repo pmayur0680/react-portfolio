@@ -8,7 +8,8 @@ export default function Resume() {
         <h2 className='mb-0'>Resume</h2>
       </div>
       <center>
-      <embed src={resume} width="800px" height="2100px" />      
+      <object data={resume} type="application/pdf" aria-label="Resume" width="90%" height="800px" />   
+      {/* <embed src={resume} width="1200px" height="2100px" />       */}
       </center>
     </div>
   );

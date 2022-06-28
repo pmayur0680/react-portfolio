@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+
 // import helper function to validate email address
 import { validateEmail } from '../../../utils/helpers';
 
@@ -9,6 +11,8 @@ export default function Contact() {
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [success, setSuccess] = useState('');
+  const [state, handleSubmit] = useForm("xoqrzrnj");
+
   // Create state variable to display validation error message
   const [errorMessage, setErrorMessage] = useState('');  
   const handleFormSubmit = (e) => {    
@@ -36,7 +40,14 @@ export default function Contact() {
     setEmail('');
     setSubject('');
     setMessage('');
-    setSuccess('Thank you for reaching out to me.');
+    setErrorMessage('');
+    handleSubmit();
+    if (state.succeeded) {
+      setSuccess('Thank you for reaching out to me.');
+    } else {
+      setErrorMessage(state.errors);
+    }
+   
   }  
   return (
     <div className='container-fluid'>
