@@ -40,8 +40,8 @@ export default function Contact() {
   }  
   return (
     <div className='container-fluid'>
-    <div class="section-title mt-2">
-      <h2>Contact</h2>
+    <div className="section-title mt-2">
+        <h2 className='mb-0'>Contact</h2>
     </div>
     <div className="row mt-1 contact">
       <div className="col-lg-3 ml-3">

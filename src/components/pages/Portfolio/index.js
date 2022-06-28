@@ -123,8 +123,8 @@ export default function Portfolio() {
     ]
   return (
     <div className= 'container-fluid'>
-       <div class="section-title mt-2">
-          <h2>Portfolio</h2>
+        <div className="section-title mt-2">
+        <h2 className='mb-0'>Portfolio</h2>
         </div>
         <div className="cards text-center">  
         { Projects.map((project) => (
