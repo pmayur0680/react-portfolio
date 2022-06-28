@@ -123,7 +123,9 @@ export default function Portfolio() {
     ]
   return (
     <div className= 'container-fluid'>
-      <h2>Portfolio</h2>      
+       <div class="section-title mt-2">
+          <h2>Portfolio</h2>
+        </div>
         <div className="cards text-center">  
         { Projects.map((project) => (
           <ProjectCard             
