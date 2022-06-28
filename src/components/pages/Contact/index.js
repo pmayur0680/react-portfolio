@@ -83,7 +83,7 @@ export default function Contact() {
        </div>
       </div>
       <div className="col-lg-9 mt-5 mt-lg-0">
-      <form className="php-email-form"> 
+      <form onSubmit={handleSubmit} className="php-email-form"> 
         <div className="row">
           <div className="col-md-6 form-group">
           <input 
@@ -91,6 +91,7 @@ export default function Contact() {
             value={name}
             onChange={(e) => setName(e.target.value)}            
             id="name"
+            name="name"
             className="form-control" 
             placeholder="Your Name"
             required
