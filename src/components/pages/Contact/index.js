@@ -42,11 +42,11 @@ export default function Contact() {
     setMessage('');
     setErrorMessage('');
     handleSubmit();
-    if (state.succeeded) {
+    //if (state.succeeded) {
       setSuccess('Thank you for reaching out to me.');
-    } else {
-      setErrorMessage(state.errors);
-    }
+    //} else {
+//      setErrorMessage(state.errors);
+  //  }
    
   }  
   return (
@@ -144,7 +144,7 @@ export default function Contact() {
           )}
         </div>
         <div className="text-center">
-          <button type="button" 
+          <button type="submit" 
                   onClick={handleFormSubmit}
                   >Send Message</button></div>
       </form>
