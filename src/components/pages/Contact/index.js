@@ -11,10 +11,9 @@ export default function Contact() {
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [success, setSuccess] = useState('');
-  const [state, handleSubmit] = useForm("xoqrzrnj");
-
   // Create state variable to display validation error message
   const [errorMessage, setErrorMessage] = useState('');  
+  const [state, handleSubmit] = useForm("xoqrzrnj");
   const handleFormSubmit = (e) => {    
     e.preventDefault();
     setSuccess('');
@@ -35,19 +34,19 @@ export default function Contact() {
       setErrorMessage('message is required!');
       return;
     }
-    // successful
-    setName('');
-    setEmail('');
-    setSubject('');
+  
     setMessage('');
     setErrorMessage('');
     handleSubmit();
-    //if (state.succeeded) {
+    if (state.succeeded) {
       setSuccess('Thank you for reaching out to me.');
-    //} else {
-//      setErrorMessage(state.errors);
-  //  }
-   
+    } else {
+      setErrorMessage(state.errors);
+   }
+     // successful
+     setName('');
+     setEmail('');
+     setSubject('');
   }  
   return (
     <div className='container-fluid'>
@@ -83,7 +82,8 @@ export default function Contact() {
        </div>
       </div>
       <div className="col-lg-9 mt-5 mt-lg-0">
-      <form onSubmit={handleSubmit} className="php-email-form"> 
+      <form className="php-email-form" action="https://formspree.io/f/xoqrzrnj"
+  method="POST"> 
         <div className="row">
           <div className="col-md-6 form-group">
           <input 
@@ -100,7 +100,8 @@ export default function Contact() {
           <div className="col-md-6 form-group mt-3 mt-md-0">
           <input 
             id="email" 
-            type="email" 
+            type="email"
+            name = "email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}            
             className="form-control" 
@@ -108,21 +109,11 @@ export default function Contact() {
             required
           />            
           </div>
-        </div>
-        <div className="form-group mt-3">
-        <input 
-            id="subject"
-            type="text" 
-            value={subject}
-            onChange={(e) => setSubject(e.target.value)}            
-            className="form-control" 
-            placeholder="Subject"
-            required
-          />
-        </div>
+        </div>       
         <div className="form-group mt-3">
         <textarea 
             id="message" 
+            name="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             rows="5"    
@@ -144,8 +135,7 @@ export default function Contact() {
           )}
         </div>
         <div className="text-center">
-          <button type="submit" 
-                  onClick={handleFormSubmit}
+          <button type="submit"                   
                   >Send Message</button></div>
       </form>
      

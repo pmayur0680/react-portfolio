@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Modal, Button, Form } from "react-bootstrap";
 
+import githubIcon from './assets/images/github-icon.png'
 import fitterProject from './assets/images/fitter.png'
 import endlessTriviaProject from './assets/images/endless-trivia.png'
 import stockSimulatorProject from './assets/images/stock-simulator.png'
@@ -25,6 +26,12 @@ function ProjectCard(props) {
             <div className="col-6 card container_foto">              
               <div className="ver_mas text-center">
                   <p className="lnr lnr-eye">
+                  {props.githubrepo &&  
+                    <a                      
+                      href={props.githubrepo}   
+                      title="GitHub Repo"                                          
+                    ><Icon icon="akar-icons:github-outline-fill" width="28" />
+                    </a> }  
                    <a href="#" onClick={handleShow} title="Project Details">
                   <Icon icon="bx:link" width="28"/></a>
               </p>
@@ -64,7 +71,7 @@ function ProjectCard(props) {
                 <>
                 <h5>Team</h5>
                 <p>Contributors: {props.contributors}<br/>
-                My Role: {props.role}</p>
+                Role: {props.role}</p>
                 </>
                 }
                  {props.githubrepo &&  
@@ -91,18 +98,30 @@ export default function Portfolio() {
     const Projects = [
           {
             "id": 1,
-            "title": "Fiiter - Social Fitness Network",
-            "thumbnail": fitterProject,
-            "githubrepo": "https://github.com/yummy314159265/Fitter",
-            "deployedurl": "https://fitter-bc2022.herokuapp.com/",
-            "about": "Fitter is a social network and web based solution to set your exercise routine, meal plan, and fitness goals. Fitter also allows friends to follow each other’s workouts in real time.",
-            "frontend": "React, Chakra UI, Nutrition API by Nutritionix",
-            "backend": "Node.js, Express.js, MongoDB, GraphQL",
+            "title": "University Mangement System - AIUWA",
+            "thumbnail": aiuwa,            
+            "deployedurl": "https://aiu.edu.gm/",
+            "about": `Complete solution for American International University West Africa to make administration work simpler. It has modules for 
+            admissions and enrollment management, student dashboard, faculties dashboard, administrative dashboard, user access controls, attendance, university calendar, 
+            payment dashboard, grades transcript, and much more.`,
+            "frontend": "HTML, CSS, JavaScript, jQuery",
+            "backend": "PHP, PostgreSQL",
             "contributors": 5,
-            "role": "GraphQL schema design, writing mutation resolvers, login, profile",
-        },
-        {
+            "role": "Database design, admission and enrollment, student dashboard, access control",
+          },       
+          {
             "id": 2,
+            "title": "Electronic Medical Records (EMR)",
+            "thumbnail": pwrmd,            
+            "deployedurl": "https://www.pwrmd.com/",
+            "about": "PowerMD+'s Electronic Medical Record (EMR) is a web based software-as-a-service (SaaS) solution integrating Practice Management, Patient Management, and Patient Portal for small & medium sized medical practices.",
+            "frontend": "HTML, CSS, JavaScript, jQuery",
+            "backend": "PHP, PostgreSQL",
+            "contributors": 5,
+            "role": "Database design, patient management, patient portal, medical charts",
+          },          
+          {
+            "id": 3,
             "title": "Endless Trivia",
             "thumbnail": endlessTriviaProject,
             "githubrepo": "https://github.com/pmayur0680/Endless-Trivia",
@@ -112,9 +131,9 @@ export default function Portfolio() {
             "backend": "Node.js, Express.js, REST API, MySQL, Sequelize ",
             "contributors": 5,
             "role": "Backend - REST API & Routes, Frontend - Quiz",
-        },
-        {
-            "id": 3,
+          },
+          {
+            "id": 4,
             "title": "Stock Simulator",
             "thumbnail": stockSimulatorProject,
             "githubrepo": "https://github.com/pmayur0680/Stock-Market-Simulator",
@@ -123,9 +142,21 @@ export default function Portfolio() {
             "frontend": "JavaScript, jQuery, Moment.js, DataTables, Bulma, Polygon.io API, CoinGecko API",
             "contributors": 3,
             "role": "Overall concept design, Stock & Crypto real-time charts, stock watchlist, latest news",
-        },        
+          },  
+          {
+            "id": 5,
+            "title": "Fiiter - Social Fitness Network",
+            "thumbnail": fitterProject,
+            "githubrepo": "https://github.com/yummy314159265/Fitter",
+            "deployedurl": "https://fitter-bc2022.herokuapp.com/",
+            "about": "Fitter is a social network and web based solution to set your exercise routine, meal plan, and fitness goals. Fitter also allows friends to follow each other’s workouts in real time.",
+            "frontend": "React, Chakra UI, Nutrition API by Nutritionix",
+            "backend": "Node.js, Express.js, MongoDB, GraphQL",
+            "contributors": 5,
+            "role": "GraphQL schema design, writing mutation resolvers, login, profile",
+           },      
         {
-            "id": 4,
+            "id": 6,
             "title": "ISP Providers",
             "thumbnail": ispProvidersInMyArea,            
             "deployedurl": "https://www.ispprovidersinmyarea.com/",
@@ -136,7 +167,7 @@ export default function Portfolio() {
             "role": "Designed and developed website from scratch, optimized using Search Engine Optimization",
         },   
         {
-            "id": 5,
+            "id": 7,
             "title": "Top 10 in USA",
             "thumbnail": top10InUSA,            
             "deployedurl": "https://www.top10inusa.com/",
@@ -147,7 +178,7 @@ export default function Portfolio() {
             "role": "Designed and developed website from scratch, optimized using Search Engine Optimization"
         },   
         {
-            "id": 6,
+            "id": 8,
             "title": "Lawyers Near Me",
             "thumbnail": lawyersNearByMe,            
             "deployedurl": "http://www.lawyersnearbyme.com/",
@@ -158,7 +189,7 @@ export default function Portfolio() {
             "role": "Designed and developed website from scratch, optimized using Search Engine Optimization"
         },   
         {
-            "id": 7,
+            "id": 9,
             "title": "Free WiFi Near Me",
             "thumbnail": freeWifiNearByMe,            
             "deployedurl": "http://www.freewifinearbyme.com/",
@@ -169,7 +200,7 @@ export default function Portfolio() {
             "role": "Designed and developed website from scratch, optimized using Search Engine Optimization"
         },   
         {
-            "id": 8,
+            "id": 10,
             "title": "Compare Electricity Rates & Plans",
             "thumbnail": bestEnergyProviders,            
             "deployedurl": "https://www.bestenergyproviders.com/",
@@ -180,7 +211,7 @@ export default function Portfolio() {
             "role": "Designed and developed website from scratch, optimized using Search Engine Optimization"
         },   
         {
-            "id": 9,
+            "id": 11,
             "title": "Compare Cable & Satellite TV Providers",
             "thumbnail": tvProvidersGuide,            
             "deployedurl": "https://www.tvprovidersguide.com/",
@@ -191,7 +222,7 @@ export default function Portfolio() {
             "role": "Designed and developed website from scratch, optimized using Search Engine Optimization"
         },   
         {
-            "id": 10,
+            "id": 12,
             "title": "NRI's World",
             "thumbnail": nrisworld,            
             "deployedurl": "http://www.nrisworld.com/",
@@ -202,7 +233,7 @@ export default function Portfolio() {
             "role": "Designed and developed website from scratch, optimized using Search Engine Optimization"
         },   
         {
-            "id": 11,
+            "id": 13,
             "title": "Compare smartphones specs & prices",
             "thumbnail": topNewSmartphones,            
             "deployedurl": "http://www.topnewsmartphones.com/",
@@ -212,26 +243,7 @@ export default function Portfolio() {
             "contributors": 1,
             "role": "Designed and developed website from scratch, optimized using Search Engine Optimization"
         },
-        {
-          "id": 12,
-          "title": "Student Mangement System - AIUWA",
-          "thumbnail": aiuwa,            
-          "deployedurl": "https://aiu.edu.gm/",
-          "about": "Student registration and management system for American International University West Africa.",
-          "frontend": "HTML, CSS, JavaScript",
-          "backend": "PHP, PostgreSQL",
-          "contributors": 3
-        },       
-        {
-          "id": 13,
-          "title": "Electronic Medical Records (EMR)",
-          "thumbnail": pwrmd,            
-          "deployedurl": "https://www.pwrmd.com/",
-          "about": "Web based solution integrating Practice Management, Patient Management, and Patient Portal for small & medium sized medical practices.",
-          "frontend": "HTML, CSS, JavaScript",
-          "backend": "PHP, PostgreSQL",
-          "contributors": 3
-        }
+       
     ]
   return (
     <div className= 'container-fluid'>
